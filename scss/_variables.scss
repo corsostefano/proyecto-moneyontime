@@ -1,0 +1,45 @@
+
+$grisfondo:#eaecef;
+$dorado:#cc9a37;
+$doradoclaro: #f6d76d;
+$seccionColor: #655d59;
+$fondoTrasnparente:#eaecefa8;
+//condicional&mixin
+@mixin condicional ($color){
+    background-color: ($color);
+
+    @if $color == $seccionColor{
+        color: white;
+    }@else if $color == $fondoTrasnparente{
+        color: black;
+        text-transform: uppercase;
+        margin: 20px;
+        width: 480px;
+        height: 190px;
+        border-radius: 4px;
+        text-align: center;
+        justify-content: space-between
+
+    }else{
+        color:black
+    }
+}
+//mapa
+$base-font-color: #666;
+$base-font-family: 'Roboto Slab', serif, 'Montserrat', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+$font: (
+  color: #666,
+  family: (serif, sans-serif),
+  size: 16px,
+  line-height: 1.4
+);
+
+body {
+  color: map-get($font, color);
+  font-family: map-get($font, family);
+  font-size: map-get($font, size);
+  line-height: map-get($font, line-height);
+}

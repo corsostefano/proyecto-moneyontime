@@ -1,0 +1,776 @@
+body {
+  color: #666;
+  font-family: serif, sans-serif;
+  font-size: 16px;
+  line-height: 1.4; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div div div a {
+  text-decoration: none; }
+
+body div div div .form2 {
+  display: flex;
+  width: auto;
+  background: rgba(255, 255, 255, 0.719);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+  text-align: left;
+  justify-content: center; }
+
+header nav {
+  background: #eaecef;
+  height: 80px;
+  width: 100%; }
+  header nav div ul {
+    float: right;
+    margin-right: 20px; }
+    header nav div ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px; }
+      header nav div ul li a {
+        color: black;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-decoration: none; }
+        header nav div ul li a.active, header nav div ul li a:hover {
+          background: #cc9a37;
+          transition: .5s;
+          color: white; }
+
+header nav div #check:checked ~ ul {
+  left: 0%; }
+
+header nav div #check {
+  display: none; }
+
+@media (min-width: 994px) {
+  header nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: #eaecef; }
+    header nav div .enlace {
+      padding: 20px 50px; }
+    header nav div .logo {
+      height: 40px;
+      margin-left: 40px; }
+    header nav div .checkBtn {
+      display: none; }
+  header nav div #check {
+    display: none; }
+  header nav div {
+    background: #eaecef;
+    height: 80px;
+    width: 100%; }
+    header nav div ul {
+      float: right;
+      margin-right: 20px; }
+      header nav div ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px; }
+        header nav div ul li a {
+          color: black;
+          font-size: 18px;
+          padding: 7px 13px;
+          border-radius: 3px; }
+          header nav div ul li a.active, header nav div ul li a:hover {
+            background: #cc9a37;
+            transition: .5s;
+            color: white; } }
+
+@media (max-width: 994px) {
+  header nav .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaecef; }
+  header nav .checkBtn {
+    display: block;
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer; }
+  header nav div ul {
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #eaecef;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    margin-top: 85px; }
+    header nav div ul li {
+      display: block;
+      margin: 50px 0 0 0;
+      line-height: 30px; }
+      header nav div ul li a {
+        font-size: 20px;
+        flex-direction: column; }
+      header nav div ul li li a.active, header nav div ul li li a:hover {
+        color: #cc9a37;
+        color: white; } }
+
+@media (max-width: 858px) {
+  header nav .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaecef; }
+  header nav .checkBtn {
+    display: block;
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer; }
+  header nav div ul {
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #eaecef;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    margin-top: 85px; }
+    header nav div ul li {
+      display: block;
+      margin: 50px 0 0 0;
+      line-height: 30px; }
+      header nav div ul li a {
+        font-size: 20px;
+        flex-direction: column; }
+      header nav div ul li li a.active, header nav div ul li li a:hover {
+        color: #cc9a37;
+        color: white; } }
+
+main div div div .h1A {
+  background-color: #eaecefa8;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px;
+  width: 480px;
+  height: 190px;
+  border-radius: 4px;
+  text-align: center;
+  justify-content: space-between; }
+  main div div div .h1A else {
+    color: black; }
+
+main div div div div form {
+  display: flex;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.719);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center; }
+  main div div div div form fieldset {
+    border-radius: 4px;
+    border: solid 3px #999; }
+    main div div div div form fieldset div .field {
+      border: solid 1px black;
+      padding: 10px;
+      width: 210px;
+      border-radius: 4px; }
+    main div div div div form fieldset div .fieldMoneda {
+      border: solid 1px black;
+      padding: 10px;
+      width: 70px;
+      font-size: 12px; }
+    main div div div div form fieldset div .boton, main div div div div form fieldset div .botonR {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 40px;
+      margin: 10px;
+      background: #cc9a37;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: .3s ease all;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden; }
+      main div div div div form fieldset div .boton:hover, main div div div div form fieldset div .botonR:hover {
+        background: #f6d76d; }
+
+main div div div .containerForm {
+  display: flex;
+  margin-left: 250px;
+  margin-right: 300px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center; }
+
+main .seccionSeis {
+  background-image: url(../img/envio-de-dinero-empresas.png);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding: 20px; }
+  main .seccionSeis H1 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 3px #fff;
+    border-radius: 25px; }
+
+main div .containerForm {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center; }
+
+main div div div .formC {
+  display: flex;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.719);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center; }
+  main div div div .formC fieldset div input {
+    width: 300px; }
+  main div div div .formC fieldset div textarea {
+    width: 300px; }
+
+main div div div form {
+  justify-content: left; }
+  main div div div form .fieldset .fieldC {
+    text-align: left;
+    width: 700px; }
+  main div div div form .fieldset inputFc {
+    display: flex;
+    width: 500px; }
+
+main div div div h1 {
+  margin: 20px; }
+
+main div div .boton, main div div .botonR {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  background: #cc9a37;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; }
+  main div div .boton:hover, main div div .botonR:hover {
+    background: #f6d76d; }
+
+main div div div .bg-white {
+  background-color: white; }
+
+main div div div .seccionNueve {
+  text-transform: capitalize; }
+
+main div div div h3 {
+  font-size: 0.9rem; }
+  main div div div h3 .gray {
+    color: #c2c0c0; }
+  main div div div h3 a {
+    text-decoration: none; }
+
+main div div div .seccionTres {
+  line-height: 1.6em; }
+
+main div div div .bg-gray {
+  background-color: #f9f9f9; }
+
+main div div .seccionCuatro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+main div div .seccionDiez {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+main div div div .ilustracionE {
+  margin-left: 120px; }
+
+main div div div .listE {
+  line-height: 1.8em;
+  padding-top: 60px; }
+
+main div div .seccionNueve {
+  background-color: #d1c5b7; }
+
+main .seccionOcho {
+  background-image: url(../img/moneyontime-empresas.png);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  padding: 20px; }
+
+main div .seccionQuince {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/contactanos-moneyontime.png);
+  background-size: cover;
+  padding: 20px; }
+
+main div .seccionQuince {
+  width: 100%;
+  height: 680px; }
+
+main div .seccionQuince .seccionDieciseis {
+  display: flex;
+  justify-content: space-between; }
+
+main div .seccionOnce {
+  justify-content: center; }
+  main div .seccionOnce .botonAyuda {
+    background-color: #cc9a37;
+    color: white;
+    border-radius: 5px; }
+  main div .seccionOnce .imgAyuda {
+    border-radius: 10px; }
+
+main div .seccionDoce {
+  justify-content: center; }
+
+main div .seccionTrece {
+  justify-content: center; }
+  main div .seccionTrece .botonAyuda {
+    background-color: #cc9a37;
+    color: white;
+    border-radius: 5px; }
+  main div .seccionTrece .imgAyuda {
+    border-radius: 10px; }
+
+main div .seccionCatorce {
+  justify-content: center; }
+
+main div .seccionQuince {
+  justify-content: center; }
+  main div .seccionQuince .botonAyuda {
+    background-color: #cc9a37;
+    color: white;
+    border-radius: 5px; }
+  main div .seccionQuince .imgAyuda {
+    border-radius: 10px; }
+
+@media (min-width: 994px) {
+  main div .seccionUno {
+    background-image: url(../img/envia-dinero.png);
+    background-size: cover;
+    padding: 40px; }
+  main div .seccionUno {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/envia-dinero.png);
+    background-size: cover;
+    padding: 20px; }
+  main div .seccionUno {
+    width: 100%;
+    height: 600px; }
+  main div div .seccionUnoA {
+    display: flex;
+    justify-content: space-between; }
+  main div div div .list1 {
+    margin-left: 0px; }
+  main div div div .ilustracionE {
+    margin-left: 0; }
+  main div .containerForm {
+    align-items: center;
+    justify-content: center;
+    width: 1150px; }
+    main div .containerForm .containerS {
+      width: 575px; }
+  main div div .seccionDos {
+    display: block;
+    justify-content: center; }
+  main div .hE2 {
+    margin-top: 30px;
+    margin-left: 800px;
+    width: 450px;
+    height: 170px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between; }
+  main div div .hE {
+    margin-top: 270px;
+    width: 450px;
+    height: 170px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center; }
+  main div .containerForm {
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+    main div .containerForm .containerS {
+      width: auto; } }
+
+@media (max-width: 858px) {
+  main .seccionUno {
+    width: auto;
+    height: 100%;
+    background-image: url(../img/moneyontime-banner.png);
+    background-size: cover;
+    padding: 20px;
+    align-items: center;
+    justify-content: center; }
+  main .seccionUno {
+    width: auto;
+    height: 700px;
+    align-items: center;
+    justify-content: center; }
+  main div .formSection1 {
+    margin-left: 65px; }
+  main div div div .h1A {
+    margin-left: auto;
+    width: 450px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center; }
+  main div div div div form {
+    display: flex;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center; }
+    main div div div div form fieldset {
+      border-radius: 4px;
+      border: solid 3px #999; }
+      main div div div div form fieldset div .field {
+        border: solid 1px black;
+        padding: 10px;
+        width: 210px;
+        border-radius: 4px; }
+      main div div div div form fieldset div .fieldMoneda {
+        border: solid 1px black;
+        padding: 10px;
+        width: 70px;
+        font-size: 12px; }
+      main div div div div form fieldset div .boton, main div div div div form fieldset div .botonR {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 40px;
+        margin: 10px;
+        background: #cc9a37;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .3s ease all;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden; }
+        main div div div div form fieldset div .boton:hover, main div div div div form fieldset div .botonR:hover {
+          background: #f6d76d; }
+  main div div .seccionUnoA {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div div .h1A {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div .seccionDos {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div .seccionCuatro {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div div .seccionCuatro1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main .seccionSeis {
+    width: auto;
+    height: 100%;
+    background-image: url(../img/envio-de-dinero-empresas.png);
+    background-size: cover;
+    padding: 20px;
+    align-items: center;
+    justify-content: center; }
+  main .seccionOcho {
+    width: auto;
+    height: 300px;
+    background-image: url(../img/moneyontime-empresas.png);
+    background-size: cover;
+    padding: 20px;
+    align-items: center;
+    justify-content: center; }
+  main div div .hE {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div .seccionDiez {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div div .seccionDiez1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+  main div div div .imgAyuda {
+    width: 300px; }
+  main div div .containerForm {
+    align-items: center;
+    justify-content: center;
+    width: auto; }
+    main div div .containerForm .containerS {
+      width: auto; }
+  main div {
+    display: block; }
+    main div .seccionQuince {
+      width: auto;
+      height: 100%;
+      background-image: url(../img/contactanos-moneyontime-m.png);
+      background-size: cover;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      display: block; }
+    main div div .seccionDieciseis {
+      width: auto;
+      height: 100%;
+      background-size: cover;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      margin-left: 65px; }
+    main div div .h1AC {
+      display: none; }
+    main div div .formC {
+      width: auto;
+      height: auto; } }
+
+.seccionTres {
+  background-color: #655d59;
+  color: white; }
+  .seccionTres else {
+    color: black; }
+
+main div div .boton, main div div .botonR {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  background: #cc9a37;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; }
+  main div div .boton:hover, main div div .botonR:hover {
+    background: #f6d76d; }
+
+main div div .botonR {
+  background: #655d59;
+  width: 200px; }
+
+@media (min-width: 994px) {
+  footer {
+    color: black; }
+  div .container-all-footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto; }
+  div div .container-footer1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #eaecef; }
+  div div div .column1 {
+    max-width: 400px; }
+  div div div .column1 h2 {
+    font-size: 22px; }
+  div div div .column1 p {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    text-align: justify; }
+  div div div .column1 {
+    max-width: 400px; }
+  div div div .column1 h2 {
+    font-size: 22px; }
+  div div div .column1 p {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    text-align: justify; }
+  div div div .column2 {
+    max-width: 400px; }
+  div div div .column2 h2 {
+    font-size: 22px; }
+  div div div .column2 .row1 {
+    margin-top: 20px;
+    display: flex; }
+  div div div .column2 .row1 img {
+    width: 36px;
+    height: 36px; }
+  div div div .column2 .row1 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black; }
+  div div div .column3 {
+    max-width: 400px;
+    font-size: 16px;
+    color: #666; }
+  div div div .row2 {
+    margin-top: 20px; }
+    div div div .row2 img {
+      width: 36px;
+      height: 36px; }
+    div div div .row2 label {
+      margin-top: 10px;
+      margin-left: 20px;
+      max-width: 140px; }
+    div div div .row2 a {
+      color: black; }
+  div div .container-footer2 {
+    background: white;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    font-size: 0.3cm;
+    color: black; }
+    div div .container-footer2 h3 {
+      font-size: 0.3cm; }
+    div div .container-footer2 a {
+      color: black; } }
+
+@media (max-width: 994px) {
+  footer {
+    color: black; }
+  div .container-all-footer {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto; }
+  div div .container-footer1 {
+    display: block;
+    justify-content: space-between;
+    padding: 40px; }
+  div div div .column1 {
+    max-width: 400px; }
+  div div div .column1 h2 {
+    font-size: 22px; }
+  div div div .column1 p {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    text-align: justify; }
+  div div div .column1 {
+    max-width: 400px; }
+  div div div .column1 h2 {
+    font-size: 22px; }
+  div div div .column1 p {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    text-align: justify; }
+  div div div .column2 {
+    max-width: 400px; }
+  div div div .column2 h2 {
+    font-size: 22px; }
+  div div div .column2 .row1 {
+    margin-top: 20px;
+    display: flex; }
+  div div div .column2 .row1 img {
+    width: 36px;
+    height: 36px; }
+  div div div .column2 .row1 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black; }
+  div div div .column3 {
+    max-width: 400px; }
+  div div div .column3 h2 {
+    font-size: 22px; }
+  div div div .row2 {
+    margin-top: 20px; }
+    div div div .row2 img {
+      width: 36px;
+      height: 36px; }
+    div div div .row2 label {
+      margin-top: 10px;
+      margin-left: 20px;
+      max-width: 140px; }
+  div div .container-footer2 {
+    background: white;
+    display: block;
+    padding: 40px;
+    justify-content: space-between;
+    font-size: 0.3cm;
+    color: black; } }
+
+@media (max-width: 952px) {
+  div div .container-footer1 {
+    display: flexbox;
+    align-items: center; }
+  div div div .column1 {
+    max-width: 100%; }
+  div div div .column2 {
+    margin-top: 40px; }
+  div div div .column3 {
+    margin-top: 40px; } }
