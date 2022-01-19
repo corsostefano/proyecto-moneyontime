@@ -182,7 +182,8 @@ main div div div div form {
   border-radius: 4px;
   margin: 20px;
   text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  color: black; }
   main div div div div form fieldset {
     border-radius: 4px;
     border: solid 3px #999; }
@@ -676,7 +677,7 @@ main div div .botonR {
   div div div .column3 {
     max-width: 400px;
     font-size: 16px;
-    color: #666; }
+    color: black; }
   div div div .row2 {
     margin-top: 20px; }
     div div div .row2 img {
