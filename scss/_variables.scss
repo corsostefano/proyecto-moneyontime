@@ -24,6 +24,29 @@ $fondoTrasnparente:#eaecefa8;
         color:black
     }
 }
+//botones
+@mixin botones {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width:  250px;
+  height: 40px;
+  margin: 10px;
+  background: $dorado;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
+  &:hover{
+    background: $doradoclaro;
+    }
+}
+
+
 //mapa
 $base-font-color: #666;
 $base-font-family: 'Roboto Slab', serif, 'Montserrat', sans-serif;

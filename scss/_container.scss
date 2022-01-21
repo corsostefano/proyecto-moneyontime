@@ -5,55 +5,33 @@ main{
                 .h1A{
                     @include condicional ($fondoTrasnparente);
                 }
-                div{
-                    form{
-                        display: flex;
-                        width: 350px;
-                        background: rgba(255, 255, 255, 0.719);
-                        padding: 20px;
+                form{
+                    display: flex;
+                    width: 350px;
+                    background: rgba(255, 255, 255, 0.719);
+                    padding: 20px;
+                    border-radius: 4px;   
+                    text-align: center;
+                    justify-content: center;
+                    color: black;
+                    fieldset{
                         border-radius: 4px;
-                        margin: 20px;   
-                        text-align: center;
-                        justify-content: center;
-                        color: black;
-                        fieldset{
-                            border-radius: 4px;
-                            border: solid 3px #999;
-                            div{
-                                .field{
-                                    border: solid 1px black;
-                                    padding: 10px;
-                                    width: 210px;
-                                    border-radius: 4px;
-                                }
-                                .fieldMoneda{
-                                   border: solid 1px black;
-                                   padding: 10px;
-                                   width: 70px;
-                                   font-size: 12px;
-                                }
-                                .boton{
-                                    display: inline-flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    width:  250px;
-                                    height: 40px;
-                                    margin: 10px;
-                                    background: $dorado;
-                                    color: white;
-                                    font-size: 20px;
-                                    font-weight: 500;
-                                    border: none;
-                                    cursor: pointer;
-                                    text-transform: uppercase;
-                                    transition: .3s ease all;
-                                    border-radius: 5px;
-                                    position: relative;
-                                    overflow: hidden;
-                                    &:hover{
-                                        background: $doradoclaro;
-                                    }
-                                }
+                        border: solid 3px #999;
+                        div{
+                            .field{
+                                border: solid 1px black;
+                                padding: 10px;
+                                width: 210px;
+                                border-radius: 4px;
+                            }
+                            .fieldMoneda{
+                               border: solid 1px black;
+                               padding: 10px;
+                               width: 70px;
+                               font-size: 12px;
+                            }
+                            .boton{
+                                @include botones;
                             }
                         }
                     }
@@ -99,40 +77,39 @@ main{
             align-items: center;
         }
         div{
-            div{
-                .formC{
-                    display: flex;
-                    width: 350px;
-                    background: rgba(255, 255, 255, 0.719);
-                    padding: 20px;
-                    border-radius: 4px;
-                    margin: 20px;   
-                    text-align: center;
-                    justify-content: center;
-                    fieldset{
-                        div{
-                            input{
-                                width: 300px;
-                            }
-                            textarea{
-                                width: 300px;
-                            }
+            .formC{
+                display: flex;
+                width: 350px;
+                height: 520px;
+                background: rgba(255, 255, 255, 0.719);
+                padding: 20px;
+                border-radius: 4px;
+                margin: 20px;   
+                text-align: center;
+                justify-content: center;
+                fieldset{
+                    div{
+                        input{
+                            width: 300px;
+                        }
+                        textarea{
+                            width: 300px;
                         }
                     }
                 }
-                form{
-                    justify-content: left;
-                    .fieldset{
-                        .fieldC{
-                            text-align: left;
-                            width: 700px;
-                          }
-                          inputFc{
-                            display: flex;
-                            width: 500px;
-                          }
+            }
+            form{
+                justify-content: left;
+                .fieldset{
+                    .fieldC{
+                        text-align: left;
+                        width: 700px;
                       }
-                }
+                      inputFc{
+                        display: flex;
+                        width: 500px;
+                      }
+                  }
             }
         }
     }
@@ -148,26 +125,7 @@ main{
     div{
         div{
             .boton{
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width:  250px;
-                height: 40px;
-                margin: 10px;
-                background: $dorado;
-                color: white;
-                font-size: 20px;
-                font-weight: 500;
-                border: none;
-                cursor: pointer;
-                text-transform: uppercase;
-                transition: .3s ease all;
-                border-radius: 5px;
-                position: relative;
-                overflow: hidden; 
-                &:hover{
-                    background: $doradoclaro;
-                }   
+                @include botones;
             }
             
             div{
@@ -248,26 +206,7 @@ main{
         background-size: cover;
         padding: 20px;
     }
-    div{
-        .seccionQuince{
-            width: 100%;
-            height: 100%;
-            background-image: url(../img/contactanos-moneyontime.png);
-            background-size: cover;
-            padding: 20px;
-          }
-          .seccionQuince{
-            width: 100%;
-            height: 680px;
-          }
-          .seccionQuince{
-            .seccionDieciseis{
-                display: flex;
-                justify-content: space-between;
     
-            }
-          }
-    }
     div{
         .seccionOnce{
             justify-content: center;
@@ -276,9 +215,7 @@ main{
                 color: white;
                 border-radius: 5px;
               }
-              .imgAyuda{
-                border-radius: 10px;
-              }
+              
           }
         .seccionDoce{
             justify-content: center;
@@ -300,20 +237,6 @@ main{
             justify-content: center;
           }  
     }
-    div{
-        .seccionQuince{
-            justify-content: center;
-            .botonAyuda{
-                background-color: $dorado;
-                color: white;
-                border-radius: 5px;
-              }
-              .imgAyuda{
-                border-radius: 10px;
-              }
-          }
-    }
-
 }
 
 @media(min-width: 994px){
@@ -370,6 +293,7 @@ main{
                width: 1150px;
                .containerS{
                    width: 575px;
+                   
                }
            }
        }
@@ -416,37 +340,46 @@ main{
                    }
                }
            }
+           div{
+            .seccionQuince{
+                width: 100%;
+                height: 680px;
+                background-image: url(../img/contactanos-moneyontime.png);
+                background-size: cover;
+                padding: 20px;
+                display: flex;
+                justify-content: right;
+                margin-right: 40px;
+                .botonAyuda{
+                    background-color: $dorado;
+                    color: white;
+                    border-radius: 5px;
+                  }
+                  .imgAyuda{
+                    border-radius: 10px;
+                  }
+              }
+        }
    }
 }
 @media(max-width: 858px){
     main{
         .seccionUno{
-            width: auto;
-            height: 100%;
+            width: 100%;
+            height: 750px;
             background-image: url(../img/moneyontime-banner.png);
             background-size: cover;
             padding: 20px;
             align-items: center;
             justify-content: center;
           }
-          .seccionUno{
-            width: auto;
-            height: 700px;
-            align-items: center;
-            justify-content: center;
-          } 
-            div{
-                .formSection1{
-                    margin-left:65px;
-                }
-            }  
             div{
                 div{
                     div{
                         .h1A{
                             margin-left: auto;
-                            width: 450px;
-                            height: 100px;
+                            width: auto;
+                            height: 150px;
                             background: rgba(255, 255, 255, 0.719);
                             border-radius: 4px;
                             text-align: center;
@@ -479,26 +412,7 @@ main{
                                            font-size: 12px;
                                         }
                                         .boton{
-                                            display: inline-flex;
-                                            align-items: center;
-                                            justify-content: center;
-                                            width:  250px;
-                                            height: 40px;
-                                            margin: 10px;
-                                            background: $dorado;
-                                            color: white;
-                                            font-size: 20px;
-                                            font-weight: 500;
-                                            border: none;
-                                            cursor: pointer;
-                                            text-transform: uppercase;
-                                            transition: .3s ease all;
-                                            border-radius: 5px;
-                                            position: relative;
-                                            overflow: hidden;
-                                            &:hover{
-                                                background: $doradoclaro;
-                                            }
+                                            @include botones;
                                         }
                                     }
                                 }
@@ -540,7 +454,7 @@ main{
                     display: block;
                     align-items: center;
                     justify-content: center;
-                    width: auto;
+                    width: 414px;
                 }
                 div{
                     .seccionCuatro1{
@@ -548,6 +462,7 @@ main{
                         align-items: center;
                         justify-content: center;
                         width: auto;
+                        margin-left: 5px;
                     }
 
                 }
@@ -597,6 +512,16 @@ main{
                         justify-content: center;
                         width: auto;
                     }
+                    
+                }
+                .seccionOnce{
+                    div{
+                        .imgNosotros{
+                            width: 300px;
+                            border-radius: 10px;
+                            margin-left: -20px;
+                        }
+                    }
                 }
             }
         }
@@ -605,6 +530,7 @@ main{
                 div{
                     .imgAyuda{
                         width: 300px;
+                        margin-left: -45px;
                     }
                 }
             }
@@ -622,40 +548,23 @@ main{
 
             }
         }
-        div{
-            display: block;
-            .seccionQuince{
-                width: auto;
-                height: 100%;
-                background-image: url(../img/contactanos-moneyontime-m.png);
-                background-size: cover;
-                padding: 20px;
-                align-items: center;
-                justify-content: center;
-                display: block;
+        .seccionQuince{
+            width: 100%;
+            height: 560px;
+            padding: 10px;
+            background-image: url(../img/contactanos-moneyontime-m.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            .botonAyuda{
+                background-color: $dorado;
+                color: white;
+                border-radius: 5px;
               }
-              div{
-                  .seccionDieciseis{
-                    width: auto;
-                    height: 100%;
-                    background-size: cover;
-                    padding: 20px;
-                    align-items: center;
-                    justify-content: center;
-                    display: block;
-                    margin-left:65px;
-                  }
-                  .h1AC{
-                      display: none;
-                  }
-                  .formC{
-                      width: auto;
-                      height: auto;
-                  }
+              .imgAyuda{
+                border-radius: 10px;
               }
-
-        }
-        
+          }
     }
 }
 .seccionTres{
@@ -665,26 +574,7 @@ main{
     div{
         div{
             .boton{
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width:  250px;
-                height: 40px;
-                margin: 10px;
-                background: $dorado;
-                color: white;
-                font-size: 20px;
-                font-weight: 500;
-                border: none;
-                cursor: pointer;
-                text-transform: uppercase;
-                transition: .3s ease all;
-                border-radius: 5px;
-                position: relative;
-                overflow: hidden;
-                &:hover{
-                    background: $doradoclaro;
-                }   
+                @include botones;
             }
             .botonR{
                 @extend.boton;
