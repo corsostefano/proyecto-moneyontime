@@ -97,7 +97,7 @@
                     label {
                       margin-top: 10px;
                       margin-left: 20px;
-                      max-width: 140px;
+                      max-width: 250px;
                     }
                     a{
                       color: black;
@@ -220,7 +220,10 @@
                   label {
                     margin-top: 10px;
                     margin-left: 20px;
-                    max-width: 140px;
+                    max-width: 250px;
+                  }
+                  a{
+                    color: black;
                   }
               }      
           }
@@ -251,6 +254,9 @@
      }
      .column3{
       margin-top: 40px;
+    }
+    a{
+      color: black;
     }
     }
     }

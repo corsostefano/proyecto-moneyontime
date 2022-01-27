@@ -1,7 +1,7 @@
 body {
   color: #666;
   font-family: serif, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4; }
 
 * {
@@ -184,44 +184,50 @@ main div div div form {
   justify-content: center;
   color: black; }
   main div div div form fieldset {
+    line-height: 2.5em;
     border-radius: 4px;
     border: solid 3px #999; }
-    main div div div form fieldset div .field {
-      border: solid 1px black;
-      padding: 10px;
-      width: 210px;
-      border-radius: 4px; }
-    main div div div form fieldset div .fieldMoneda {
-      border: solid 1px black;
-      padding: 10px;
-      width: 70px;
-      font-size: 12px; }
-    main div div div form fieldset div .boton, main div div div form fieldset div .botonR {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 250px;
-      height: 40px;
-      margin: 10px;
-      background: #cc9a37;
-      color: white;
-      font-size: 20px;
-      font-weight: 500;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: .3s ease all;
-      border-radius: 5px; }
-      main div div div form fieldset div .boton:hover, main div div div form fieldset div .botonR:hover {
-        background: #f6d76d; }
+    main div div div form fieldset div {
+      line-height: 1.6em; }
+      main div div div form fieldset div .field {
+        border: solid 1px black;
+        padding: 10px;
+        width: 210px;
+        border-radius: 4px; }
+      main div div div form fieldset div .fieldMoneda {
+        border: solid 1px black;
+        padding: 10px;
+        width: 70px;
+        font-size: 12px; }
+      main div div div form fieldset div .boton, main div div div form fieldset div .botonR {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 40px;
+        margin: 10px;
+        background: #cc9a37;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .3s ease all;
+        border-radius: 5px; }
+        main div div div form fieldset div .boton:hover, main div div div form fieldset div .botonR:hover {
+          background: #f6d76d; }
 
-main div div div .containerForm {
+main div div .seccionTres {
+  line-height: 1.6em;
+  background-color: #786d67;
+  color: white; }
+
+main div div .seccionCuatro {
   display: flex;
-  margin-left: 250px;
-  margin-right: 300px;
-  text-align: center;
   justify-content: space-between;
-  align-items: center; }
+  width: 100%;
+  height: 100%; }
 
 main .seccionSeis {
   background-image: url(../img/envio-de-dinero-empresas.png);
@@ -236,6 +242,59 @@ main .seccionSeis {
     letter-spacing: 2px;
     border-radius: 3px #fff;
     border-radius: 25px; }
+
+main .seccionOcho {
+  background-image: url(../img/moneyontime-empresas.png);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  padding: 20px; }
+
+main div div div .ilustracionE {
+  margin-left: 120px; }
+
+main div div div .listE {
+  line-height: 1.8em;
+  padding-top: 60px; }
+
+main div div .seccionNueve {
+  background-color: #d1c5b7; }
+
+main div div .seccionDiez {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+main div .seccionOnce {
+  justify-content: center; }
+  main div .seccionOnce .botonAyuda {
+    background-color: #cc9a37;
+    color: white;
+    border-radius: 5px; }
+
+main div .seccionDoce {
+  justify-content: center; }
+
+main div .seccionTrece {
+  justify-content: center; }
+  main div .seccionTrece .botonAyuda {
+    background-color: #cc9a37;
+    color: white;
+    border-radius: 5px; }
+  main div .seccionTrece .imgAyuda {
+    border-radius: 10px; }
+
+main div .seccionCatorce {
+  justify-content: center; }
+
+main div div div .containerForm {
+  display: flex;
+  margin-left: 250px;
+  margin-right: 300px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center; }
 
 main div .containerForm {
   display: flex;
@@ -302,63 +361,6 @@ main div div div h3 {
   main div div div h3 a {
     text-decoration: none; }
 
-main div div div .seccionTres {
-  line-height: 1.6em; }
-
-main div div div .bg-gray {
-  background-color: #f9f9f9; }
-
-main div div .seccionCuatro {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%; }
-
-main div div .seccionDiez {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%; }
-
-main div div div .ilustracionE {
-  margin-left: 120px; }
-
-main div div div .listE {
-  line-height: 1.8em;
-  padding-top: 60px; }
-
-main div div .seccionNueve {
-  background-color: #d1c5b7; }
-
-main .seccionOcho {
-  background-image: url(../img/moneyontime-empresas.png);
-  width: 100%;
-  height: 700px;
-  background-size: cover;
-  padding: 20px; }
-
-main div .seccionOnce {
-  justify-content: center; }
-  main div .seccionOnce .botonAyuda {
-    background-color: #cc9a37;
-    color: white;
-    border-radius: 5px; }
-
-main div .seccionDoce {
-  justify-content: center; }
-
-main div .seccionTrece {
-  justify-content: center; }
-  main div .seccionTrece .botonAyuda {
-    background-color: #cc9a37;
-    color: white;
-    border-radius: 5px; }
-  main div .seccionTrece .imgAyuda {
-    border-radius: 10px; }
-
-main div .seccionCatorce {
-  justify-content: center; }
-
 @media (min-width: 994px) {
   main div .seccionUno {
     background-image: url(../img/envia-dinero.png);
@@ -376,19 +378,13 @@ main div .seccionCatorce {
   main div div .seccionUnoA {
     display: flex;
     justify-content: space-between; }
+  main div div .seccionDos {
+    display: block;
+    justify-content: center; }
   main div div div .list1 {
     margin-left: 0px; }
   main div div div .ilustracionE {
     margin-left: 0; }
-  main div .containerForm {
-    align-items: center;
-    justify-content: center;
-    width: 1150px; }
-    main div .containerForm .containerS {
-      width: 575px; }
-  main div div .seccionDos {
-    display: block;
-    justify-content: center; }
   main div .hE2 {
     margin-top: 30px;
     margin-left: 800px;
@@ -406,6 +402,12 @@ main div .seccionCatorce {
     border-radius: 4px;
     text-align: center;
     justify-content: center; }
+  main div .containerForm {
+    align-items: center;
+    justify-content: center;
+    width: 1150px; }
+    main div .containerForm .containerS {
+      width: 575px; }
   main div .containerForm {
     align-items: center;
     justify-content: center;
@@ -509,8 +511,7 @@ main div .seccionCatorce {
     display: block;
     align-items: center;
     justify-content: center;
-    width: auto;
-    margin-left: 5px; }
+    width: auto; }
   main .seccionSeis {
     width: 100%;
     height: 200px;
@@ -569,12 +570,6 @@ main div .seccionCatorce {
       border-radius: 5px; }
     main .seccionQuince .imgAyuda {
       border-radius: 10px; } }
-
-.seccionTres {
-  background-color: #655d59;
-  color: white; }
-  .seccionTres else {
-    color: black; }
 
 main div div .boton, main div div .botonR {
   display: inline-flex;
@@ -655,7 +650,7 @@ main div div .botonR {
     div div div .row2 label {
       margin-top: 10px;
       margin-left: 20px;
-      max-width: 140px; }
+      max-width: 250px; }
     div div div .row2 a {
       color: black; }
   div div .container-footer2 {
@@ -725,7 +720,9 @@ main div div .botonR {
     div div div .row2 label {
       margin-top: 10px;
       margin-left: 20px;
-      max-width: 140px; }
+      max-width: 250px; }
+    div div div .row2 a {
+      color: black; }
   div div .container-footer2 {
     background: white;
     display: block;
@@ -743,4 +740,6 @@ main div div .botonR {
   div div div .column2 {
     margin-top: 40px; }
   div div div .column3 {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  div div div a {
+    color: black; } }

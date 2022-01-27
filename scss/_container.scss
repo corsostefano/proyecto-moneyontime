@@ -1,3 +1,4 @@
+//index
 main{
     div{
         div{
@@ -13,11 +14,13 @@ main{
                     border-radius: 4px;   
                     text-align: center;
                     justify-content: center;
-                    color: black;
+                    color: black;               
                     fieldset{
+                        line-height: 2.5em;
                         border-radius: 4px;
                         border: solid 3px #999;
                         div{
+                            line-height: 1.6em;
                             .field{
                                 border: solid 1px black;
                                 padding: 10px;
@@ -41,18 +44,26 @@ main{
     }
     div{
         div{
-            div{
-                .containerForm{
-                    display: flex;
-                    margin-left: 250px;
-                    margin-right:300px;  
-                    text-align: center;
-                    justify-content:space-between;
-                    align-items: center;
-                }
+            .seccionTres{
+                line-height: 1.6em;
+                background-color: #786d67;
+                color: white
             }
         }
     }
+    div{
+        div{
+            .seccionCuatro{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+//Empresas
+main{
     .seccionSeis{
         background-image: url(../img/envio-de-dinero-empresas.png);
         width: 100%;
@@ -68,6 +79,95 @@ main{
             border-radius: 3px #fff;
             border-radius: 25px;
           }
+    }
+    .seccionOcho{
+        background-image: url(../img/moneyontime-empresas.png);
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        padding: 20px;
+    }
+    div{
+        div{
+            div{
+                .ilustracionE{
+                    margin-left: 120px;
+                  }
+                .listE{
+                    line-height: 1.8em;
+                    padding-top: 60px   ;
+                  }
+                
+            }
+        }
+        div{
+            .seccionNueve{
+                background-color: #d1c5b7;
+            }
+        }
+    }
+    div{
+        div{
+            .seccionDiez{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+//nosotros
+main{
+    div{
+        .seccionOnce{
+            justify-content: center;
+            .botonAyuda{
+                background-color: $dorado;
+                color: white;
+                border-radius: 5px;
+              }
+              
+          }
+        .seccionDoce{
+            justify-content: center;
+          }  
+    }
+}
+//preguntas
+main{
+    div{
+        .seccionTrece{
+            justify-content: center;
+            .botonAyuda{
+                background-color: $dorado;
+                color: white;
+                border-radius: 5px;
+              }
+              .imgAyuda{
+                border-radius: 10px;
+              }
+          }
+        .seccionCatorce{
+            justify-content: center;
+          }  
+    }
+}
+//Contactanos
+main{
+    div{
+        div{
+            div{
+                .containerForm{
+                    display: flex;
+                    margin-left: 250px;
+                    margin-right:300px;  
+                    text-align: center;
+                    justify-content:space-between;
+                    align-items: center;
+                }
+            }
+        }
     }
     div{
         .containerForm{
@@ -143,103 +243,13 @@ main{
                 a{
                     text-decoration: none;
                 }   
-                
                 } 
             }
         }
     }
-    div{
-        div{
-            div{
-                .seccionTres{
-                    line-height: 1.6em;
-                }
-                .bg-gray{
-                    background-color: #f9f9f9;
-                }
-            }
-        }
-    }
-    div{
-        div{
-            .seccionCuatro{
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    div{
-        div{
-            .seccionDiez{
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    div{
-        div{
-            div{
-                .ilustracionE{
-                    margin-left: 120px;
-                  }
-                .listE{
-                    line-height: 1.8em;
-                    padding-top: 60px   ;
-                  }
-                
-            }
-        }
-        div{
-            .seccionNueve{
-                background-color: #d1c5b7;
-            }
-        }
-    }
-    .seccionOcho{
-        background-image: url(../img/moneyontime-empresas.png);
-        width: 100%;
-        height: 700px;
-        background-size: cover;
-        padding: 20px;
-    }
-    
-    div{
-        .seccionOnce{
-            justify-content: center;
-            .botonAyuda{
-                background-color: $dorado;
-                color: white;
-                border-radius: 5px;
-              }
-              
-          }
-        .seccionDoce{
-            justify-content: center;
-          }  
-    }
-    div{
-        .seccionTrece{
-            justify-content: center;
-            .botonAyuda{
-                background-color: $dorado;
-                color: white;
-                border-radius: 5px;
-              }
-              .imgAyuda{
-                border-radius: 10px;
-              }
-          }
-        .seccionCatorce{
-            justify-content: center;
-          }  
-    }
 }
-
 @media(min-width: 994px){
+    //index
     main{
         div{
             .seccionUno{
@@ -268,24 +278,63 @@ main{
             }
         }
      }
-       div{
-           div{
-               div{
-                   .list1{
-                       margin-left: 0px;
-                     }   
-               }
-           }
-       }
-       div{
-           div{
-               div{
-                   .ilustracionE{
-                       margin-left: 0;
-                     }
-               }
-           }
-       }
+     div{
+        div{
+         .seccionDos{
+             display: block;
+             justify-content: center;
+         }
+        }
+    }
+     div{
+        div{
+            div{
+                .list1{
+                    margin-left: 0px;
+                  }   
+            }
+        }
+    }
+    div{
+        div{
+            div{
+                .ilustracionE{
+                    margin-left: 0;
+                  }
+            }
+        }
+    }
+    }
+    //Empresas
+    main{
+        div{
+            .hE2{
+                margin-top: 30px;
+                margin-left: 800px;
+                width: 450px;
+                height: 170px;
+                background: rgba(255, 255, 255, 0.719);
+                border-radius: 4px;
+                text-align: center;
+                justify-content: space-between;
+            }
+            div{
+                
+                .hE{
+                    margin-top: 270px;
+                    width: 450px;
+                    height: 170px;
+                    background: rgba(255, 255, 255, 0.719);
+                    border-radius: 4px;
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+            }
+            }
+    }
+    //contactanos
+    main{
        div{
            .containerForm{
                align-items: center;
@@ -296,69 +345,36 @@ main{
                    
                }
            }
-       }
-       div{
-           div{
-            .seccionDos{
-                display: block;
+        }
+        div{
+            .containerForm{
+                align-items: center;
                 justify-content: center;
+                width: auto;
+                .containerS{
+                      width: auto;
+                }
             }
-           }
-       }
-       div{
-           .hE2{
-               margin-top: 30px;
-               margin-left: 800px;
-               width: 450px;
-               height: 170px;
-               background: rgba(255, 255, 255, 0.719);
-               border-radius: 4px;
-               text-align: center;
-               justify-content: space-between;
-           }
-           div{
-               
-               .hE{
-                   margin-top: 270px;
-                   width: 450px;
-                   height: 170px;
-                   background: rgba(255, 255, 255, 0.719);
-                   border-radius: 4px;
-                   text-align: center;
-                   justify-content: center;
-               }
-               
-           }
-           }
-           div{
-               .containerForm{
-                   align-items: center;
-                   justify-content: center;
-                   width: auto;
-                   .containerS{
-                       width: auto;
-                   }
-               }
-           }
-           div{
+        }
+        div{
             .seccionQuince{
-                width: 100%;
-                height: 680px;
-                background-image: url(../img/contactanos-moneyontime.png);
-                background-size: cover;
-                padding: 20px;
-                display: flex;
-                justify-content: right;
-                margin-right: 40px;
-                .botonAyuda{
-                    background-color: $dorado;
-                    color: white;
-                    border-radius: 5px;
-                  }
-                  .imgAyuda{
-                    border-radius: 10px;
-                  }
-              }
+            width: 100%;
+            height: 680px;
+            background-image: url(../img/contactanos-moneyontime.png);
+            background-size: cover;
+            padding: 20px;
+            display: flex;
+            justify-content: right;
+            margin-right: 40px;
+            .botonAyuda{
+                background-color: $dorado;
+                color: white;
+                border-radius: 5px;
+                }
+                .imgAyuda{
+                border-radius: 10px;
+                }
+            }
         }
    }
 }
@@ -445,7 +461,6 @@ main{
                 align-items: center;
                 justify-content: center;
                 width: auto;
-
             }
         }
         div{
@@ -462,7 +477,6 @@ main{
                         align-items: center;
                         justify-content: center;
                         width: auto;
-                        margin-left: 5px;
                     }
 
                 }
@@ -566,9 +580,6 @@ main{
               }
           }
     }
-}
-.seccionTres{
-    @include condicional ($seccionColor)
 }
 main{
     div{
